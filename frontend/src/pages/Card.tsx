@@ -11,7 +11,7 @@ type ProductProps = {
 
 const Card = ({ productId, photo, name, price, stock, handler }: ProductProps) => {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs transition-transform p-5 hover:scale-105 duration-300 bg-gradient-to-t from-gray-50 to-sky-100">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs transition-all p-5 hover:scale-105 duration-300 bg-gradient-to-t from-gray-50 to-sky-100">
       <div className="relative">
         <img
           className="w-full h-[70%] object-cover rounded-lg"
