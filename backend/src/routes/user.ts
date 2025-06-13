@@ -26,7 +26,12 @@ export const newUser = app.post(
         success: true,
         message: `${user.name} has been created successfully`,
       });
-    } catch (error) {}
+    } catch (error) {
+      res.status(500).json({
+        success: false,
+        message : error
+      })
+    }
   }
 );
 export default app;
